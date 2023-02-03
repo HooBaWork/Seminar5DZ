@@ -5,8 +5,7 @@
 Console.Clear();
 Console.WriteLine("Введите размер массива");
 int size = int.Parse(Console.ReadLine());
-double[] resultArray = returnArray();//Забили массив с помощь функции,через которую пользователь вводит элементы массива
-
+double[] resultArray = returnArray();
 double[] returnArray()
 {
 
@@ -23,8 +22,13 @@ double[] returnArray()
 double difference(double[] resultArray) //Полученный массив отправляем в функцию ,для сравнения первого и последнего элементов массива
 {
    double resultDif = resultArray[0]-resultArray[^1];
-   return resultDif;
-}
 
+return resultDif;
+}
+void main()
+{
 double res = difference(resultArray);
 Console.WriteLine($"Разница между первым и последним элементом массива {res}");
+}
+
+main();
