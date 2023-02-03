@@ -30,7 +30,7 @@ double[] returnArray()
    return array;
 }
 
-double difference(double a,double b)
+double difference(double a,double b)// Вычитаем из первого последний элемент массива,что бы узнать разницу между ними .Первый элемент массива [0],последнй [-1].
 {
 double resultDif = a - b;
 return resultDif;
